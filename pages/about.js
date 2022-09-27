@@ -1,10 +1,11 @@
 import Layout from '../components/section/Layout';
+import LinkItem from '../components/LinkItem';
 const About = () => {
 	return (
 		<Layout title='about'>
-			<div className='flex justify-center mt-5'>
-				<div className='p-2 w-3/12 rounded-md text-dark dark:text-light bg-gray-200 dark:bg-zinc-800 text-center leading-relaxed tracking-wide text-md font-mono'>
-					This is about page!
+			<div className='container w-6/12 px-6'>
+				<div className='font-mono text-md text-dark dark:text-light'>
+					Hi! I&#39;m <LinkItem href='https://github.com/xtenkousa'>hmdfz.</LinkItem> 👀
 				</div>
 			</div>
 		</Layout>
