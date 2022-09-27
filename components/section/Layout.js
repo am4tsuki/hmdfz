@@ -25,7 +25,7 @@ const Layout = ({ children, title }) => {
 			<div>
 				<Header />
 				<nav>
-					<div className='mt-5 flex space-x-10 justify-center'>
+					<div className='flex justify-center mt-5 space-x-10'>
 						<NavWrap>
 							<Link href='/'>
 								<a className={router.pathname == '/' ? 'bg-orange dark:text-dark' : 'dark:text-light'}>home</a>

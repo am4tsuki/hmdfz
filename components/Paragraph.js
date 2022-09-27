@@ -1,5 +1,5 @@
 const Paragraph = ({ children }) => {
-	return <p className='text-justify leading-relaxed'>{children}</p>;
+	return <p className='leading-relaxed text-justify'>{children}</p>;
 };
 
 export default Paragraph;

@@ -20,7 +20,7 @@ const Header = () => {
 		if (currentTheme === 'dark') {
 			return (
 				<SunIcon
-					className='w-10 h-10 text-orange hover:bg-orange hover:text-dark transition duration-300 rounded-full p-2 hover:bg-opacity-75'
+					className='w-10 h-10 p-2 transition duration-300 rounded-full text-orange hover:bg-orange hover:text-dark hover:bg-opacity-75'
 					role='button'
 					onClick={() => setTheme('light')}
 				/>
@@ -28,7 +28,7 @@ const Header = () => {
 		} else {
 			return (
 				<MoonIcon
-					className='w-10 h-10 text-dark hover:bg-orange hover:text-light transition duration-300 rounded-full p-2 hover:bg-opacity-75'
+					className='w-10 h-10 p-2 transition duration-300 rounded-full text-dark hover:bg-orange hover:text-light hover:bg-opacity-75'
 					role='button'
 					onClick={() => setTheme('dark')}
 				/>
@@ -38,11 +38,11 @@ const Header = () => {
 
 	return (
 		<div className='container mx-auto mt-5'>
-			<div className='relative w-6/12 mx-auto flex transition justify-center items-center font-monoxl text-5xl text-dark dark:text-light text-center'>
+			<div className='relative flex items-center justify-center w-6/12 mx-auto text-5xl text-center transition font-monoxl text-dark dark:text-light'>
 				<Link href='/'>HMDFZ.</Link>
 				<div className='absolute right-0'>{renderThemeChanger()}</div>
 			</div>
-			<p className='text-md font-mono text-center my-5'>You can ask me about design, programming and other stuff.</p>
+			<p className='my-5 font-mono text-center text-md'>You can ask me about design, programming and other stuff.</p>
 			<Line />
 		</div>
 	);

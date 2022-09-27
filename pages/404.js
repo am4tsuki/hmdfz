@@ -3,7 +3,7 @@ const Works = () => {
 	return (
 		<Layout title='404'>
 			<div className='flex justify-center mt-5'>
-				<div className='p-2 w-3/12 rounded-md text-dark dark:text-light bg-gray-200 dark:bg-zinc-800 text-center leading-relaxed tracking-wide text-md font-mono'>
+				<div className='w-3/12 p-2 font-mono leading-relaxed tracking-wide text-center bg-gray-200 rounded-md text-dark dark:text-light dark:bg-zinc-800 text-md'>
 					404 - Not Found
 				</div>
 			</div>

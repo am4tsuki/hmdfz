@@ -13,7 +13,7 @@ const Home = () => {
 						<div className='flex justify-center'>
 							<Image unoptimized={true} src='anime-wave.gif' alt='anime-wave' height={300} width={550} />
 						</div>
-						<div className='mt-5 p-2 bg-stone-200 dark:bg-stone-800'>
+						<div className='p-2 mt-5 bg-stone-200 dark:bg-stone-800'>
 							<div className='h-24 mr-5 w-[2px] float-left bg-stone-800 dark:bg-light'></div>
 							<div>
 								<Paragraph>“We are such stuff as dreams are made on, and our little life is rounded with a sleep.”</Paragraph>
