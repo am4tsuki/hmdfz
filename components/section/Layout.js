@@ -5,6 +5,13 @@ import Header from './Header';
 import Footer from './Footer';
 import NavWrap from '../NavWrap';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+
+const variants = {
+	hidden: { opacity: 0, x: 0, y: 20 },
+	enter: { opacity: 1, x: 0, y: 0 },
+	exit: { opacity: 0, x: -0, y: 20 },
+};
 
 const Layout = ({ children, title }) => {
 	const router = useRouter();
@@ -27,22 +34,22 @@ const Layout = ({ children, title }) => {
 				<nav>
 					<div className='flex justify-center mt-5 space-x-5 xl:space-x-10 lg:space-x-10 md:space-x-10 sm:space-x-10'>
 						<NavWrap>
-							<Link href='/'>
+							<Link href='/' passHref>
 								<a className={router.pathname == '/' ? 'bg-orange dark:text-dark' : 'dark:text-light'}>home</a>
 							</Link>
 						</NavWrap>
 						<NavWrap>
-							<Link href='/about'>
+							<Link href='/about' passHref>
 								<a className={router.pathname == '/about' ? 'bg-orange dark:text-dark' : 'dark:text-light'}>about</a>
 							</Link>
 						</NavWrap>
 						<NavWrap>
-							<Link href='/works'>
+							<Link href='/works' passHref>
 								<a className={router.pathname == '/works' ? 'bg-orange dark:text-dark' : 'dark:text-light'}>works</a>
 							</Link>
 						</NavWrap>
 						<NavWrap>
-							<Link href='https://github.com/xtenkousa'>
+							<Link href='https://github.com/xtenkousa' passHref>
 								<a target='_blank' className='dark:text-light'>
 									github
 								</a>
@@ -53,7 +60,16 @@ const Layout = ({ children, title }) => {
 						<Line />
 					</div>
 				</nav>
-				{children}
+				<motion.div
+					initial='hidden'
+					animate='enter'
+					exit='exit'
+					variants={variants}
+					transition={{ duration: 0.3, type: 'easeInOut' }}
+					style={{ position: 'relative' }}
+				>
+					{children}
+				</motion.div>
 				<Footer />
 			</div>
 		</>
