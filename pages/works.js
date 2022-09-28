@@ -1,11 +1,10 @@
 import Layout from '../components/section/Layout';
+
 const Works = () => {
 	return (
 		<Layout title='works'>
-			<div className='flex justify-center mt-5'>
-				<div className='w-3/12 p-2 font-mono leading-relaxed tracking-wide text-center bg-gray-200 rounded-md text-dark dark:text-light dark:bg-zinc-800 text-md'>
-					This is works page!
-				</div>
+			<div className='container w-11/12 xl:w-6/12 xl:px-6 lg:w-8/12 lg:px-8 md:w-10/12 md:px-4 sm:w-10/12 sm:px-2'>
+				<div className='font-mono text-sm xl:text-lg lg:text-lg md:text-lg sm:text-md text-dark dark:text-light'>this is my portofolio page!</div>
 			</div>
 		</Layout>
 	);
