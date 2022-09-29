@@ -31,6 +31,7 @@ const Layout = ({ children, title }) => {
 			</Head>
 			<div>
 				<Header />
+				<Line />
 				<nav>
 					<div className='flex justify-center mt-5 space-x-5 xl:space-x-10 lg:space-x-10 md:space-x-10 sm:space-x-10'>
 						<NavWrap>
