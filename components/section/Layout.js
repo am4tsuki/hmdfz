@@ -31,7 +31,9 @@ const Layout = ({ children, title }) => {
 			</Head>
 			<div>
 				<Header />
-				<Line />
+				<div className='container mx-auto'>
+					<Line />
+				</div>
 				<nav>
 					<div className='flex justify-center mt-5 space-x-5 xl:space-x-10 lg:space-x-10 md:space-x-10 sm:space-x-10'>
 						<NavWrap>
@@ -50,7 +52,7 @@ const Layout = ({ children, title }) => {
 							</Link>
 						</NavWrap>
 						<NavWrap>
-							<Link href='https://github.com/xtenkousa' passHref>
+							<Link href='https://github.com/powzee' passHref>
 								<a target='_blank' className='dark:text-light'>
 									github
 								</a>
